@@ -27,9 +27,9 @@ namespace ejercicios
         {
             
             double totalv, comision,ventau, ventad, ventat;
-            ventau = Convert.ToInt32(txventau.Text);
-            ventad =  Convert.ToInt32(txventad.Text);
-            ventat = Convert.ToInt32(txventat.Text);
+            ventau = Convert.ToDouble(txventau.Text);
+            ventad =  Convert.ToDouble(txventad.Text);
+            ventat = Convert.ToDouble(txventat.Text);
             totalv = ventat + ventad + ventau;
             comision = totalv * 0.10;
             lblcomision.Text = System.Convert.ToString(comision);
@@ -38,10 +38,10 @@ namespace ejercicios
         protected void bttotal_Click(object sender, EventArgs e)
         {
             double sueldo, comision, total,totalv,ventau,ventat,ventad;
-            sueldo = Convert.ToInt32(txsueldo.Text);
-            ventau = Convert.ToInt32(txventau.Text);
-            ventad = Convert.ToInt32(txventad.Text);
-            ventat = Convert.ToInt32(txventat.Text);
+            sueldo = Convert.ToDouble(txsueldo.Text);
+            ventau = Convert.ToDouble(txventau.Text);
+            ventad = Convert.ToDouble(txventad.Text);
+            ventat = Convert.ToDouble(txventat.Text);
             totalv = ventat + ventad + ventau;
             comision = totalv * 0.10;
             total = sueldo + comision;
@@ -51,7 +51,7 @@ namespace ejercicios
         protected void btgenerarp_Click(object sender, EventArgs e)
         {
             double totalp, descuento, totalc;
-            totalc = Convert.ToInt32(txtotalc.Text);
+            totalc = Convert.ToDouble(txtotalc.Text);
             descuento = totalc * 0.10;
             totalp = descuento- totalc;
             lbltotalp.Text = System.Convert.ToString(totalp);
@@ -60,11 +60,11 @@ namespace ejercicios
         protected void btdefinitva_Click(object sender, EventArgs e)
         {
             double calu, cald, calt, trabajo, examen, promediocal, promcalp, promedioexamen, promediotrabajo, nota;
-            calu = Convert.ToInt32(txcalu.Text);
-            cald = Convert.ToInt32(txcald.Text);
-            calt = Convert.ToInt32(txcalt.Text);
-            examen = Convert.ToInt32(txexamen.Text);
-            trabajo = Convert.ToInt32(txtrabajo.Text);
+            calu = Convert.ToDouble(txcalu.Text);
+            cald = Convert.ToDouble(txcald.Text);
+            calt = Convert.ToDouble(txcalt.Text);
+            examen = Convert.ToDouble(txexamen.Text);
+            trabajo = Convert.ToDouble(txtrabajo.Text);
             promediocal = (calu + calt + cald) / 3;
             promcalp = promediocal * 0.55;
             promedioexamen = examen * 0.30;
